@@ -1,0 +1,24 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+@import "header";
+@import "page";
+@import "reset";
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  background: linear-gradient(98.06deg, rgba(46, 41, 20, 0.2) -5.43%, rgba(207, 208, 210, 0.2) 104.96%);
+}
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 25px;
+}
+@import "media"; // Always at the end
