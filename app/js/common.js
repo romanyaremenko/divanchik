@@ -10,6 +10,7 @@ $(function() {
     var flipText = new Swiper(".flip-text", {
         wrapperClass:"flip-wrapper-text",
         slideClass:"flip-slide-text",
+        autoHeight: true,
         navigation: {
             nextEl: ".flip-btn__next",
             prevEl: ".flip-btn__prev",
@@ -20,6 +21,7 @@ $(function() {
         effect: "flip",
         // slidesPerView:1,
         // effect: "creative",
+        autoHeight: true,
         creativeEffect: {
             prev: {
                 translate: ["100%", 0, 0],
@@ -45,6 +47,7 @@ $(function() {
         effect: "flip",
         // slidesPerView:1,
         // effect: "creative",
+        autoHeight: true,
         creativeEffect: {
             prev: {
                 translate: ["100%", 0, 0],
@@ -67,6 +70,7 @@ $(function() {
     var flipText2 = new Swiper(".flip-text2", {
         wrapperClass:"flip-wrapper-text2",
         slideClass:"flip-slide-text2",
+        autoHeight: true,
         navigation: {
             nextEl: ".flip-btn__next2",
             prevEl: ".flip-btn__prev2",
@@ -76,8 +80,9 @@ $(function() {
 
     var flip3  = new Swiper(".flip3", {
         // effect: "flip",
-        // slidesPerView:1,
-        effect: "creative",
+        slidesPerView:1.2,
+        centeredSlides:true,
+        // effect: "creative",
         creativeEffect: {
             prev: {
                 translate: ["100%", 0, 0],
@@ -95,7 +100,24 @@ $(function() {
         },
         wrapperClass:"flip-wrapper3",
         slideClass:"flip-slider3",
+        1024: {
+            slidesPerView:1,
+        }
+    });
+
+    var numbersSwiper = new Swiper(".numbers-swiper", {
+        wrapperClass:"numbers-wrapper",
+        slideClass:"numbers-slide",
+        slidesPerView:1.5,
+        spaceBetween:24,
+        centeredSlides:true,
+        breakpoints: {
+            1024: {
+                slidesPerView:3,
+            }
+        }
     });
 
     console.log("test")
 });
+
