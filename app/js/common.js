@@ -21,7 +21,7 @@ $(function() {
         effect: "flip",
         // slidesPerView:1,
         // effect: "creative",
-        autoHeight: true,
+        // autoHeight: true,
         creativeEffect: {
             prev: {
                 translate: ["100%", 0, 0],
