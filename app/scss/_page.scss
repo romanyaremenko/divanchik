@@ -158,6 +158,10 @@
     .flip {
       width: 100%;
     }
+    .flip-wrapper {
+      display: flex;
+      align-items: center;
+    }
     .swiper-slide {
       display: flex;
       justify-content: center;
