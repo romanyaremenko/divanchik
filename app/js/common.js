@@ -49,6 +49,7 @@ $(function() {
         let indexSlider = flipText.activeIndex
         flip.slideTo(indexSlider)
         console.log(indexSlider)
+        console.log("1231231")
     });
     flip.on('slideChangeTransitionStart', function () {
         let indexSlider = flip.activeIndex
