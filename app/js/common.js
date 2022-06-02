@@ -41,6 +41,20 @@ $(function() {
         slideClass:"flip-slider",
     });
 
+    if(flipText.on('slideChange') === true) {
+        console.log("test123")
+    }
+
+    flipText.on('slideChangeTransitionStart', function () {
+        let indexSlider = flipText.activeIndex
+        flip.slideTo(indexSlider)
+        console.log(indexSlider)
+    });
+    flip.on('slideChangeTransitionStart', function () {
+        let indexSlider = flip.activeIndex
+        flipText.slideTo(indexSlider)
+        console.log(indexSlider)
+    });
 
 
     var flip2  = new Swiper(".flip2", {
